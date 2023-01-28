@@ -1,0 +1,24 @@
+project <spec_file>_<function_name> is
+
+   AUNIT_PATH := external("AUNIT_PATH", "C:\GNAT\2021\include\aunit");
+
+   for Source_Dirs use ("src/_test/harness", "src/_test/test_cases", "src/_test", "src", AUNIT_PATH);
+   for Object_Dir use "obj";
+   for Main use ("<function_name>_Harness.adb");
+
+   package Linker is
+      for Default_Switches ("ada") use
+        ("-g", "-O0", "-gnata", "-gnat2022", "-fprofile-arcs", "-ftest-coverage");
+   end Linker;
+
+   package Binder is
+      for Default_Switches ("ada") use ("-E", "-static");
+   end Binder;
+
+
+   package Compiler is
+      for Default_Switches ("ada") use
+        ("-g", "-O0", "-gnata", "-gnat2022", "-fprofile-arcs", "-ftest-coverage");
+   end Compiler;
+
+end <spec_file>_<function_name>;

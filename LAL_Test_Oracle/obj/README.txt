@@ -1,0 +1,1 @@
+Please, compile the libadalang project using the LAL_Test_Generator.gpr

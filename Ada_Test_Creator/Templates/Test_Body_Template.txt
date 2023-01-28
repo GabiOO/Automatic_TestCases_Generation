@@ -1,0 +1,29 @@
+with Ada.Text_IO; use Ada.Text_IO;
+with AUnit.Assertions; use AUnit.Assertions;
+with Ada.Containers.Vectors;
+
+package body <spec_file>.Test_<function_name> is
+<int_support>
+<record_definition>
+--- UNIT TESTS ------------------------------------
+
+<test_cases>
+
+   --- Registration ---------------------
+
+   procedure Register_Tests (T : in out Test_Case) is
+      use AUnit.Test_Cases.Registration;
+   begin
+
+<register_routines>
+   end Register_Tests;
+
+   --- Name ------------------------------
+
+   function Name (T : Test_Case) return AUnit.Message_String is
+      pragma Unreferenced (T);
+   begin
+      return AUnit.Format ("");
+   end Name;
+
+end <spec_file>.Test_<function_name>;

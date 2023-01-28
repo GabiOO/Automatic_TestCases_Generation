@@ -1,0 +1,16 @@
+with AUnit;
+with AUnit.Test_Cases;
+
+package <spec_file>.Test_<function_name> is
+
+   type Test_Case is new AUnit.Test_Cases.Test_Case with null record;
+
+   --overriding procedure Set_Up_Case (T : in out Test_Case);   --Sets up everything for the test case
+
+   --overriding procedure Tear_Down_Case (T : in out Test_Case);--Tears down the test case
+
+   procedure Register_Tests (T : in out Test_Case);           --Registers the tests
+
+   function Name (T : Test_Case) return AUnit.Message_String; --Name of the test case
+
+end <spec_file>.Test_<function_name>;

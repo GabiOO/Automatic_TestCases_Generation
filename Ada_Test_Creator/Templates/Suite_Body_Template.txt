@@ -1,0 +1,17 @@
+with <spec_file>.Test_<function_name>;
+
+package body <function_name>_Suite is
+
+   use AUnit.Test_Suites;
+
+   function Suite return AUnit.Test_Suites.Access_Test_Suite is
+      TS_ptr : constant Access_Test_Suite := new Test_Suite;
+   begin
+
+      TS_ptr.Add_Test(new <spec_file>.Test_<function_name>.Test_Case);
+
+      return TS_ptr;
+
+   end Suite;
+
+end <function_name>_Suite;

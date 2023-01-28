@@ -1,0 +1,7 @@
+with AUnit.Test_Suites;
+
+package <function_name>_Suite is
+
+   function Suite return AUnit.Test_Suites.Access_Test_Suite;
+
+end <function_name>_Suite;
