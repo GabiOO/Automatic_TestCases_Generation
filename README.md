@@ -13,7 +13,7 @@ Utilidades como el "man" no vienen instaladas por defecto en Git pero con este t
 
 5) Dado que Github no soporta archivos demasiado pesados no pude subir el ejecutable del LAL_Test_Oracle, por lo que el proyecto de LAL_Test_Oracle requiere compilarse.
 
-Bibliografía:
+Bibliografía
 Libadalang: https://docs.adacore.com/live/wave/libadalang/html/libadalang_ug/ada_api_core.html#package-Libadalang.Common
 
 Z3py: https://ericpony.github.io/z3py-tutorial/guide-examples.htm
