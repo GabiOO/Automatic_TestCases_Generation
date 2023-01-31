@@ -6,6 +6,7 @@ REQUISITOS: tener GNATStudio instalado, python en cualquier versión 3 o superio
 
 3) En lo que a gcov/gcovr respecta, gcov ya venía junto con el paquete básico de gcc pero gcovr sí requiere instalación:
 https://gcovr.com/en/stable/installation.html
+
 Una prueba fácil para ver si efectivamente se dispone de gcov sería ejecutar desde Git: "gcov --help" y luego "gcovr --help" para confirmar que ambos se hallen presentes.
 
 4) En cuanto a Z3, random y numpy, son módulos de python por lo que bastaría con hacer un pip install z3-solver numpy random. Página de referencia del módulo de z3: https://pypi.org/project/z3-solver
