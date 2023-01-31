@@ -6,5 +6,3 @@
 
 rm -rf *_files   #Removes Test_Generator output
 rm -rf Case_Studies_Executed  #Removes Execute_All_Case_Studies output
-rm -rf Code_Coverage_Executed #Removes Execute_All_Code_Coverage output
-rm -rf Case_Studies_Time_Measures #Removes Time_Script output
