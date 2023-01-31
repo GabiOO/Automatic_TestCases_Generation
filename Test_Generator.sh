@@ -107,9 +107,9 @@ else
 fi
 
 #----------Comment the following section when executing time measures
-#gcov -fbco ./obj ./src/$body_file  #with branch coverage, just a brief summary 
+gcov -fbco ./obj ./src/$body_file  #with branch coverage, just a brief summary 
 
-#html_reports_dir="html_coverage_reports"
-#mkdir $html_reports_dir
-#cd $html_reports_dir
-#gcovr -r .. -g --html -o coverage.html --html-details  #-g to use existing gcov files 
+html_reports_dir="html_coverage_reports"
+mkdir $html_reports_dir
+cd $html_reports_dir
+gcovr -r .. -g --html -o coverage.html --html-details  #-g to use existing gcov files 
