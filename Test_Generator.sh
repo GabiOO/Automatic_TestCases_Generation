@@ -14,7 +14,7 @@ function_name=$2
 max_solutions=$3 
 body_file=$4
 verbose=${5:-true}  #true by default
-random_seed=${6:-true}  #0 by default, only used if random oracle enabled
+random_seed=${6:-0}  #0 by default, only used if random oracle enabled
 
 #First we use libadalang to create the .py file with constraints for Z3
 files_dir="${function_name}_files"
