@@ -1,8 +1,8 @@
 Requirements: You need to install GNATStudio, python version 3.0 or higher (along with the modules z3-solver, numpy and random) and gcov/gcovr. It is also necessary to create an specific file hierarchy inside GNAT and a Bash Interpreter.
 
-1) Install GNATStudio (the free version would do): \\https://www.adacore.com/gnatpro/toolsuite/gnatstudio
+1) Install GNATStudio (the free version would do): https://www.adacore.com/gnatpro/toolsuite/gnatstudio
 
-2) Install Python with the modules numpy, random and z3-solver: \\https://pypi.org/project/z3-solver
+2) Install Python with the modules numpy, random and z3-solver: https://pypi.org/project/z3-solver
    Personally, I use Python 3.10.8 but any version higher or equal to 3 would do, versions 2 or lower have a different 'string' treatment.
 
 3) In respect to gcov/gcovr, gcov comes with the basic gcc package but gcovr does require an installation: https://gcovr.com/en/stable/installation.html
