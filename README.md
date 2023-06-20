@@ -1,28 +1,18 @@
-REQUISITOS: tener GNATStudio instalado, python en cualquier versión 3 o superior, gcov/gcovr, los módulos z3-solver, numpy y random de python y una jerarquía de archivos en GNAT. Por último ser requiere un intérprete de bash. He utilizado https://gitforwindows.org/
+Requirements: You need to install GNATStudio, python version 3.0 or higher (along with the modules z3-solver, numpy and random) and gcov/gcovr. It is also necessary to create an specific file hierarchy inside GNAT and a Bash Interpreter.
 
-1) Instalar GNATStudio.
+1) Install GNATStudio (the free version would do): \\https://www.adacore.com/gnatpro/toolsuite/gnatstudio
 
-2) En mi caso concreto, lo ejecuto con python 3.10.8 pero cualquier python de versión 3 o superior debería valer. Importante que no se use una versión 2 ya que el tratamiento de strings cambia respecto a python 3.
+2) Install Python with the modules numpy, random and z3-solver: \\https://pypi.org/project/z3-solver
+   Personally, I use Python 3.10.8 but any version higher or equal to 3 would do, versions 2 or lower have a different 'string' treatment.
 
-3) En lo que a gcov/gcovr respecta, gcov ya venía junto con el paquete básico de gcc pero gcovr sí requiere instalación:
-https://gcovr.com/en/stable/installation.html
-Una prueba fácil para ver si efectivamente se dispone de gcov sería ejecutar desde Git: "gcov --help" y luego "gcovr --help" para confirmar que ambos se hallen presentes.
+3) In respect to gcov/gcovr, gcov comes with the basic gcc package but gcovr does require an installation: https://gcovr.com/en/stable/installation.html
 
-4) En cuanto a Z3, random y numpy, son módulos de python por lo que bastaría con hacer un pip install z3-solver numpy random. Página de referencia del módulo de z3: https://pypi.org/project/z3-solver
+4) Once GNATStudio is installed, it is necessary to create the following file hierarchy in GNAT: '/GNAT/2021/projects/Test_Generator/'
 
-5) También es necesario tener la siguiente jerarquía de archivos en GNAT: /GNAT/2021/projects/Test_Generator/. Por tanto en 
+5) Finally, as for the Bash Interpreter, I recommend https://gitforwindows.org/
 
-/GNAT/2021/projects ejecutar:
+Once the previous requirements are met, you should download the content of the repository and place it inside the folder: '/GNAT/2021/projects/Test_Generator/'.
 
- git clone https://github.com/GabiOO/UnitTest_Generator.git Test_Generator
+Since GitHub do not support heavy files, the executable of the project 'LAL_Test_Oracle' must be compiled before use: open the LAL_Test_Oracle.gpr file isnide GNATSTudio and compile it.
 
-
-6) Dado que Github no soporta archivos demasiado pesados no pude subir el ejecutable del LAL_Test_Oracle, por lo que el proyecto de LAL_Test_Oracle requiere compilarse.
-
-USO: tras cumplir los requisitos previos,
-
-1) Descargar el contenido del repositorio.
-
-2) Dentro de la carpeta LAL_TestOracle, abrir LAL_Test_Oracle.gpr con GNATStudio y compilarlo.
-
-3) Volver a la carpeta principal y ejecutar el script Execute_All_Case_Studies.sh.
+Finally, return to the main folder and execute the scipt 'Execute_All_Case_Studies.sh'.
